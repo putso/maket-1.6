@@ -21,6 +21,9 @@ function setSwiper(object) {
   let { swiperClass, pogination, swiper } = object;
   object.swiper = new Swiper("." + swiperClass, {
     spaceBetween: 16,
+    keyboard: {
+      enabled: true,
+    },
     slidesPerView: "auto",
     pagination: {
       el: "." + pogination,
