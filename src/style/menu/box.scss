@@ -18,11 +18,11 @@
     display: block;
   }
   &__menu {
-    transition: all 0.2s;
+    transition: all 0.3s;
     left: -440px;
   }
   &--open &__menu {
-    transition: all 0.2s;
+    transition: all 0.3s;
     left: 0;
   }
 }

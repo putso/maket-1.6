@@ -8,6 +8,7 @@
 @import 'style/call/index.scss';
 @import 'style/feedback/index.scss';
 @import 'style/popup-box.scss';
+@import 'style/swiper.scss';
 * {
   box-sizing: border-box;
 }
@@ -17,7 +18,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #1b1c21;
-  background-color: #f8f8f8;
+  background-color: $light-gray;
 
 
 }
