@@ -1,0 +1,33 @@
+.info-menu {
+    overflow-x: auto;
+    &__box {
+      display: flex;
+      gap: 16px;
+      white-space: nowrap;
+      padding: 2px 16px 14px;
+    }
+    &__item {
+      font-size: 16px;
+      font-weight: 500;
+      color: #7e7e82;
+      cursor: pointer;
+      padding: 8px 10px;
+      &--active {
+        border-radius: 6px;
+        border: 2px solid #b8ffec;
+        background: #fff;
+      }
+      &:hover:not(&--active) {
+        background: #fff;
+        border-radius: 6px;
+        outline: 2px solid $dark-purple;
+      
+      }
+    }
+    @media (min-width: 1440px) {
+      &__box {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  

@@ -1,0 +1,12 @@
+.langs {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &__item--active {
+      color: #7e7e82;
+    }
+    @media (min-width: 1440px) { 
+      position: static;
+      margin: 0;
+    }
+  }

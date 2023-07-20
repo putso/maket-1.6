@@ -1,0 +1,40 @@
+.tele {
+  font-weight: 700;
+  font-size: 24px;
+}
+.menu-box {
+  @media (min-width: 1440px) {
+    margin: 0;
+    position: static;
+    width: unset;
+  }
+  &--open {
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #ffffffc0;
+    display: block;
+  }
+  &__menu {
+    transition: all 0.2s;
+    left: -440px;
+  }
+  &--open &__menu {
+    transition: all 0.2s;
+    left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .menu-box {
+    margin: 0;
+    position: static;
+    transform: translateX(0);
+    width: unset;
+  }
+  .logo {
+    position: static;
+    margin: 0;
+  }
+}

@@ -1,0 +1,67 @@
+.button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
+  &--purple {
+    background: $base-purble;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  
+    
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+// .-button {
+//   display: flex;
+//   justify-content: flex-start;
+//   font-family: "TT Lakes", sans-serif;
+//   align-items: center;
+//   gap: 8px;
+//   font-size: 16px;
+//   padding: 0;
+//   font-weight: 500;
+//   &::before {
+//     content: "";
+//     vertical-align: bottom;
+//     width: 24px;
+//     height: 24px;
+//     background-image: url("../icons/expand.svg");
+//   }
+//   &--active::before {
+//     content: "";
+//     vertical-align: bottom;
+//     width: 24px;
+//     height: 24px;
+//     background-image: url("../icons/expand.svg");
+//     transform: rotate(0.5turn);
+//   }
+// }
+.more-button {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "TT Lakes", sans-serif;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  padding: 0;
+  font-weight: 500;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 24px;
+    height: 24px;
+    background-image: url("../icons/expand.svg");
+  }
+  &--active::before {
+    transform: rotate(0.5turn);
+  }
+}

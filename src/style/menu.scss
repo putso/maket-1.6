@@ -1,0 +1,130 @@
+
+
+.burger-menu {
+  background: white;
+  z-index: 3;
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 18px 24px;
+  padding-bottom: 32px;
+  transition: all 0.2s;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    @media (min-width: 1440px) { 
+      box-shadow: unset;
+      position: relative;
+      left: 0;
+      &__footer {
+        margin-top: 241px;
+      }
+    }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    font-weight: 500;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    color: $dark-purple;
+  }
+  &__item--active {
+    color: #7e7e82;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      background-image: url("../icons/highlight.svg");
+      width: 4px;
+      height: 32px;
+    }
+  }
+  &__langs {
+    margin-top: 20px;
+  }
+}
+.logo {
+  position: absolute;
+  margin-left: 60px;
+}
+.contact-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.langs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  &__item--active {
+    color: #7e7e82;
+  }
+  @media (min-width: 1440px) { 
+    position: static;
+    margin: 0;
+  }
+}
+.tele {
+  font-weight: 700;
+  font-size: 24px;
+}
+.menu-box {
+
+  @media (min-width: 1440px) { 
+    margin: 0;
+    position: static;
+    width: unset;
+  }
+  &--open {
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #ffffffc0;
+    display: block;
+  }
+  &__menu {
+    transition: all 0.2s;
+    left: -440px;
+  }
+  &--open &__menu {
+    transition: all 0.2s;
+    left: 0;
+  }
+}
+@media (min-width: 1440px) { 
+    .menu-box  {
+        margin: 0;
+        position: static;
+        transform: translateX(0);
+        width: unset;
+    }
+    .logo {
+        position: static;
+        margin: 0;
+    }
+}
