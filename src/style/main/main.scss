@@ -41,12 +41,18 @@
       border-radius: 10px;
       flex-grow: 1;
       flex-shrink: 1;
-      width: 50%;
+      flex-basis: 100px;
       max-width: 530px;
+      max-height: 318px;
+      aspect-ratio: 5 / 3;
+      flex-basis: 0;
+      min-width: 0;
     }
     &__info {
       flex-grow: 1;
       flex-shrink: 1;
+      flex-basis: 0;
+      min-width: 0;
     }
   }
   &__header-box {

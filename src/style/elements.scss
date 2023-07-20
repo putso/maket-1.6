@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   background: none;
+  transition: all 0.3s;
   cursor: pointer;
   &--purple {
     background: $base-purble;
