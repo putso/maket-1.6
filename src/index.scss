@@ -1,24 +1,17 @@
 @import 'style/var.scss';
-@import 'style/svg.scss';
 @import 'style/fonts';
-@import 'style/elements';
+@import'style/elements';
 @import 'style/menu/index.scss';
 @import 'style/icons.scss';
 @import 'style/main/index.scss';
-@import 'style/tech.scss';
-@import 'style/prices.scss';
-@import 'style/table.scss';
-@import 'style/prices-info.scss';
 @import 'style/footer.scss';
 @import 'style/call/index.scss';
 @import 'style/feedback/index.scss';
 @import 'style/popup-box.scss';
-@import 'style/brands.scss';
 * {
   box-sizing: border-box;
 }
 body {
-	// min-width: 320px;
   font-family: "TT Lakes", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -26,11 +19,7 @@ body {
   color: #1b1c21;
   background-color: #f8f8f8;
 
-	// @media (min-width: 1440px) {
-	// 	display: flex;
-	// 	flex-direction: row-reverse;
-	// 	justify-content: center;
-  // }
+
 }
 h2 {
   margin: 0;

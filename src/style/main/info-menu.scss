@@ -9,16 +9,16 @@
     &__item {
       font-size: 16px;
       font-weight: 500;
-      color: #7e7e82;
+      color: $dark-gray;
       cursor: pointer;
       padding: 8px 10px;
       &--active {
         border-radius: 6px;
         border: 2px solid #b8ffec;
-        background: #fff;
+        background: white;
       }
       &:hover:not(&--active) {
-        background: #fff;
+        background: white;
         border-radius: 6px;
         outline: 2px solid $dark-purple;
       

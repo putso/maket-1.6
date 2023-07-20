@@ -14,11 +14,11 @@
 .content-box {
   @media (min-width: 1440px) {
     width: 1120px;
-    background: #f8f8f8;
+    background: $light-gray;
     padding-bottom: 42px;
   }
   &__header {
-    border-bottom: 1px solid #d9fff5;
+    border-bottom: 1px solid $light-blue;
     background-color: white;
   }
 }
@@ -28,8 +28,7 @@
 .main {
   font-size: 16px;
   font-weight: 500;
-  background: #f8f8f8;
-  font-family: "TT Lakes";
+  background: $light-gray;
   @media (min-width: 768px) {
     &__content-wrapper {
       display: flex;

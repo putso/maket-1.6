@@ -3,7 +3,7 @@
     align-items: center;
     gap: 16px;
     &__item--active {
-      color: #7e7e82;
+      color: $dark-gray;
     }
     @media (min-width: 1440px) { 
       position: static;
