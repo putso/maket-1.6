@@ -20,5 +20,7 @@ function setToggle(buttonClass, hideClassArr) {
     }
   });
 }
+
 setToggle(dropdownBrandsButton,dropdownBrandsBlock)
-setToggle(".tech__button", ".tech-list__item--hidden")
+setToggle(".tech__button", ".tech-list__item--hidden");
+setToggle('.main__info__button', ".main__description--hidden")
